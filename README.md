@@ -2,6 +2,10 @@
 
 # note.sh
 
+:bangbang: | This is my personal fork of [note.sh](https://github.com/hachibu/note.sh).
+I added some more actions and support for multiple 'folders' (home,work, etc, see Multi-account setup).
+:---: | :---
+
 A simple shell script for managing your random daily notes. Every time you
 run `note.sh` it opens a Markdown file for that day. For example, if today was
 Dec 2, 2020, it would create a Markdown file called `2020-12-02.md` in your
@@ -33,3 +37,15 @@ This script was heavily inspired by [todo.txt-cli](https://github.com/todotxt/to
    $ make install
    ```
    To remove the symlink run: `make uninstall`.
+
+## Multi-account setup
+
+To support multiple accounts - different folders, possible synced differently - you must call note.sh with another NOTE_DIR.
+So for this setup to use it easily, you should create aliases like this (example):
+
+```shell
+alias note-home="export NOTE_DIR=/home/user/Dropbox/notes-home; note.sh"
+alias note-work="export NOTE_DIR=/home/user/Seafile/notes-work; note.sh"
+```
+
+If you use note.sh directly, this will use the last NOTE_DIR you accessed.
