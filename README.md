@@ -2,9 +2,9 @@
 
 # note.sh
 
-:bangbang: | This is my personal fork of [note.sh](https://github.com/hachibu/note.sh).
+:bangbang: 
+This is my personal fork of [note.sh](https://github.com/hachibu/note.sh).
 I added some more actions and support for multiple 'folders' (home,work, etc, see Multi-account setup).
-:---: | :---
 
 A simple shell script for managing your random daily notes. Every time you
 run `note.sh` it opens a Markdown file for that day. For example, if today was
